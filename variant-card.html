@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1e8">
+  <title>Питта Эллас</title>
+  <meta name="description" content="Автоматизированное производство традиционной греческой питы полного цикла.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="variant-card.css?v=2">
+</head>
+<body>
+  <main class="page" id="top">
+    <header class="header">
+      <div class="header__inner">
+        <nav class="nav nav--left" aria-label="Основная навигация">
+          <a class="is-current" href="#top">Главная</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <a class="logo" href="#top" aria-label="Питта Эллас, на главную">
+          <img src="assets/logo.svg" alt="Питта Эллас">
+        </a>
+
+        <div class="header__right">
+          <nav class="nav nav--right" aria-label="Разделы сайта">
+            <a href="#products">Продукция</a>
+            <a href="#production">Производство</a>
+          </nav>
+          <div class="language" aria-label="Выбор языка">
+            <button class="is-active" type="button" aria-pressed="true">RU</button>
+            <span></span>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+
+        <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+          <a href="#top">Главная</a>
+          <a href="#contacts">Контакты</a>
+          <a href="#products">Продукция</a>
+          <a href="#production">Производство</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="showcase" aria-labelledby="variant-title">
+      <div class="showcase__media">
+        <img src="assets/hero-pita-v2.png" alt="Свежая традиционная греческая пита" fetchpriority="high">
+      </div>
+
+      <article class="showcase__card">
+        <h1 id="variant-title">
+          <span>Питта Эллас</span>
+          <strong>№1 в России</strong>
+          <span>по производству</span>
+          <span>греческой питы.</span>
+        </h1>
+
+        <p>
+          Автоматизированное производство полного цикла в Краснодарском крае.
+          Основа вашего успешного бизнеса в сфере стрит-фуда и ресторанов.
+        </p>
+
+        <div class="actions">
+          <a class="button button--primary" href="#products">Продукция</a>
+          <a class="button button--secondary" href="#partner">Стать партнером</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
