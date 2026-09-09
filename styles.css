@@ -422,8 +422,8 @@ h1 > span { display: block; }
 }
 
 .benefit:nth-child(3) .benefit__icon img {
-  width: 108px;
-  height: 108px;
+  width: 94px;
+  height: 94px;
 }
 
 .benefit p {
