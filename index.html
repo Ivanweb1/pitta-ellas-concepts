@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="header">
@@ -47,15 +47,26 @@
 
   <main class="hero" id="top">
     <div class="hero__slider" aria-label="Продукция Питта Эллас">
-      <div class="hero__slide is-active">
-        <img src="assets/hero-pita-v2.png" alt="Свежая традиционная греческая пита" fetchpriority="high">
-      </div>
-      <div class="hero__slide" aria-hidden="true">
-        <img src="assets/hero-pita-v2.png" alt="">
+      <div class="hero__track">
+        <div class="hero__slide is-active">
+          <img src="assets/hero-pita-v2.png" alt="Свежая традиционная греческая пита" fetchpriority="high">
+        </div>
+        <div class="hero__slide" aria-hidden="true">
+          <img src="assets/hero-pita-v2.png" alt="">
+        </div>
       </div>
     </div>
     <div class="hero__shade" aria-hidden="true"></div>
     <div class="hero__grain" aria-hidden="true"></div>
+
+    <div class="slider-controls" aria-label="Управление слайдером">
+      <button class="slider-arrow slider-arrow--prev" type="button" aria-label="Предыдущий слайд">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+      <button class="slider-arrow slider-arrow--next" type="button" aria-label="Следующий слайд">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </button>
+    </div>
 
     <section class="hero__content" aria-labelledby="hero-title">
       <h1 id="hero-title">
@@ -75,6 +86,6 @@
       </div>
     </section>
   </main>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
