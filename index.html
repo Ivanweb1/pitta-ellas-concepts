@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="header">
@@ -59,15 +59,6 @@
     <div class="hero__shade" aria-hidden="true"></div>
     <div class="hero__grain" aria-hidden="true"></div>
 
-    <div class="slider-controls" aria-label="Управление слайдером">
-      <button class="slider-arrow slider-arrow--prev" type="button" aria-label="Предыдущий слайд">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
-      </button>
-      <button class="slider-arrow slider-arrow--next" type="button" aria-label="Следующий слайд">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
-      </button>
-    </div>
-
     <section class="hero__content" aria-labelledby="hero-title">
       <h1 id="hero-title">
         <span class="title-brand">Питта Эллас</span>
@@ -80,9 +71,20 @@
         Основа вашего успешного бизнеса в сфере стрит-фуда и ресторанов.
       </p>
 
-      <div class="hero__actions">
-        <a class="button button--primary" href="#products">Продукция</a>
-        <a class="button button--secondary" href="#partner">Стать партнером</a>
+      <div class="hero__toolbar">
+        <div class="hero__actions">
+          <a class="button button--primary" href="#products">Продукция</a>
+          <a class="button button--secondary" href="#partner">Стать партнером</a>
+        </div>
+
+        <div class="slider-controls" aria-label="Управление слайдером">
+          <button class="slider-arrow slider-arrow--prev" type="button" aria-label="Предыдущий слайд">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+          </button>
+          <button class="slider-arrow slider-arrow--next" type="button" aria-label="Следующий слайд">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </button>
+        </div>
       </div>
     </section>
   </main>

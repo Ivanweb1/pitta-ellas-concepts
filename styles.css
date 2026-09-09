@@ -147,7 +147,8 @@ button { color: inherit; font: inherit; }
 
 .logo {
   flex: 0 0 auto;
-  width: 154px;
+  width: auto;
+  height: calc(100% - 20px);
   display: block;
   transition: transform .4s var(--ease);
 }
@@ -156,8 +157,8 @@ button { color: inherit; font: inherit; }
 
 .logo img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .header__right {
@@ -192,11 +193,8 @@ button { color: inherit; font: inherit; }
 .mobile-menu { display: none; }
 
 .slider-controls {
-  position: absolute;
-  z-index: 15;
-  right: max(36px, calc((100% - 1460px) / 2));
-  bottom: 40px;
   display: flex;
+  flex: 0 0 auto;
   gap: 10px;
 }
 
@@ -330,11 +328,21 @@ h1 > span { display: block; }
   text-shadow: 0 2px 18px rgba(0, 0, 0, .34);
 }
 
+.hero__toolbar {
+  position: relative;
+  z-index: 15;
+  width: 100%;
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 34px;
 }
 
 .button {
@@ -372,7 +380,6 @@ h1 > span { display: block; }
   .header__inner { gap: 30px; }
   .nav, .header__right { gap: 24px; }
   .nav a { font-size: 9px; }
-  .logo { width: 142px; }
 }
 
 @media (max-width: 820px) {
@@ -388,7 +395,6 @@ h1 > span { display: block; }
     width: calc(100% - 40px);
   }
   .nav, .header__right { display: none; }
-  .logo { width: 116px; }
   .menu-button {
     display: block;
     width: 46px;
@@ -434,7 +440,6 @@ h1 > span { display: block; }
     padding: 70px 0 90px;
   }
   h1 { max-width: 620px; }
-  .slider-controls { right: 20px; bottom: 24px; }
   .slider-arrow { width: 46px; height: 46px; }
 }
 
@@ -453,9 +458,9 @@ h1 > span { display: block; }
   .title-production { margin-top: 15px; font-size: 10px; letter-spacing: .14em; }
   .title-product { font-size: clamp(45px, 13vw, 60px); }
   .hero__lead { margin-top: 24px; font-size: 13px; line-height: 1.62; }
-  .hero__actions { width: 100%; margin-top: 28px; }
+  .hero__toolbar { margin-top: 28px; flex-direction: column; align-items: flex-end; }
+  .hero__actions { width: 100%; }
   .button { width: 100%; min-height: 52px; }
-  .slider-controls { top: 22px; right: 20px; bottom: auto; }
   .slider-arrow { width: 42px; height: 42px; }
 }
 
