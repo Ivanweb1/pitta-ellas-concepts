@@ -9,50 +9,53 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
-  <main class="hero" id="top">
-    <img class="hero__background" src="assets/hero-pita-v2.png" alt="Свежая традиционная греческая пита" fetchpriority="high">
-    <div class="hero__shade" aria-hidden="true"></div>
-    <div class="hero__grain" aria-hidden="true"></div>
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="Питта Эллас, на главную">
+        <img src="assets/logo.svg" alt="Питта Эллас">
+      </a>
 
-    <header class="header">
-      <div class="header__inner">
-        <nav class="nav nav--left" aria-label="Основная навигация">
+      <div class="header__right">
+        <nav class="nav" aria-label="Основная навигация">
           <a class="is-current" href="#top">Главная</a>
           <a href="#contacts">Контакты</a>
-        </nav>
-
-        <a class="logo-seal" href="#top" aria-label="Питта Эллас, на главную">
-          <span class="logo-seal__ring"></span>
-          <img src="assets/logo.svg" alt="Питта Эллас">
-        </a>
-
-        <div class="header__right">
-          <nav class="nav nav--right" aria-label="Разделы сайта">
-            <a href="#products">Продукция</a>
-            <a href="#production">Производство</a>
-          </nav>
-          <div class="language" aria-label="Выбор языка">
-            <button class="is-active" type="button" aria-pressed="true">RU</button>
-            <span></span>
-            <button type="button" aria-pressed="false">EN</button>
-          </div>
-        </div>
-
-        <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span><span></span>
-        </button>
-
-        <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
-          <a href="#top">Главная</a>
           <a href="#products">Продукция</a>
           <a href="#production">Производство</a>
-          <a href="#contacts">Контакты</a>
         </nav>
+        <div class="language" aria-label="Выбор языка">
+          <button class="is-active" type="button" aria-pressed="true">RU</button>
+          <span></span>
+          <button type="button" aria-pressed="false">EN</button>
+        </div>
       </div>
-    </header>
+
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+        <a href="#top">Главная</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#products">Продукция</a>
+        <a href="#production">Производство</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero" id="top">
+    <div class="hero__slider" aria-label="Продукция Питта Эллас">
+      <div class="hero__slide is-active">
+        <img src="assets/hero-pita-v2.png" alt="Свежая традиционная греческая пита" fetchpriority="high">
+      </div>
+      <div class="hero__slide" aria-hidden="true">
+        <img src="assets/hero-pita-v2.png" alt="">
+      </div>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
 
     <section class="hero__content" aria-labelledby="hero-title">
       <h1 id="hero-title">
@@ -72,6 +75,6 @@
       </div>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
