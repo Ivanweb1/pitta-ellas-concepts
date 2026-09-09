@@ -392,6 +392,7 @@ h1 > span { display: block; }
 }
 
 .benefit__icon {
+  position: relative;
   flex: 0 0 72px;
   width: 72px;
   height: 72px;
@@ -404,12 +405,15 @@ h1 > span { display: block; }
 }
 
 .benefit__icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: block;
   width: 140px;
   height: 140px;
   max-width: none;
-  flex: none;
   object-fit: contain;
+  transform: translate(-50%, -50%);
 }
 
 .benefit p {
