@@ -589,14 +589,16 @@ h1 > span { display: block; }
   transform: translate(4px, -50%);
 }
 
-.product-card__link svg {
-  width: 21px;
-  height: 21px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.product-card__link img {
+  width: 36px;
+  height: 36px;
+  display: block;
+  object-fit: contain;
+  transition: filter .3s ease;
+}
+
+.product-card__link:hover img {
+  filter: brightness(0) invert(1);
 }
 
 @keyframes image-in {
