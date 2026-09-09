@@ -389,30 +389,17 @@ h1 > span { display: block; }
 }
 
 .benefit__icon {
-  width: 92px;
-  height: 92px;
+  width: 112px;
+  height: 112px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(39, 44, 67, .14);
-  border-radius: 50%;
-  color: var(--navy);
-  background: var(--white);
-  box-shadow: inset 0 0 0 8px rgba(255, 218, 121, .2), 0 18px 34px rgba(92, 71, 35, .08);
 }
 
-.benefit__icon svg {
-  width: 54px;
-  height: 54px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.benefit__icon .benefit__accent {
-  stroke: #d2a229;
-  stroke-width: 2.2;
+.benefit__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .benefit p {
@@ -689,8 +676,7 @@ h1 > span { display: block; }
   .slider-arrow { width: 46px; height: 46px; }
   .benefits { padding: 68px 0 72px; }
   .benefits__inner { width: calc(100% - 40px); gap: 24px; }
-  .benefit__icon { width: 82px; height: 82px; }
-  .benefit__icon svg { width: 48px; height: 48px; }
+  .benefit__icon { width: 100px; height: 100px; }
   .benefit p { font-size: 21px; }
   .about { scroll-margin-top: 88px; padding: 88px 0; }
   .about__inner { width: calc(100% - 40px); grid-template-columns: 1fr 1fr; gap: 46px; }
