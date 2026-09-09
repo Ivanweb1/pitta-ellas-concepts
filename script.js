@@ -35,6 +35,47 @@
     });
   });
 
+  var partnerDialog = document.querySelector('.partner-dialog');
+  var partnerForm = document.querySelector('.partner-form');
+  var partnerClose = document.querySelector('.partner-dialog__close');
+
+  document.querySelectorAll('.js-partner-open').forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      if (!partnerDialog) return;
+      event.preventDefault();
+      partnerDialog.showModal();
+      document.body.classList.add('has-dialog');
+      window.requestAnimationFrame(function () {
+        var firstInput = partnerDialog.querySelector('input');
+        if (firstInput) firstInput.focus();
+      });
+    });
+  });
+
+  if (partnerDialog) {
+    partnerDialog.addEventListener('click', function (event) {
+      if (event.target === partnerDialog) partnerDialog.close();
+    });
+
+    partnerDialog.addEventListener('close', function () {
+      document.body.classList.remove('has-dialog');
+    });
+  }
+
+  if (partnerClose && partnerDialog) {
+    partnerClose.addEventListener('click', function () {
+      partnerDialog.close();
+    });
+  }
+
+  if (partnerForm && partnerDialog) {
+    partnerForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      partnerDialog.close();
+      partnerForm.reset();
+    });
+  }
+
   var slides = Array.prototype.slice.call(document.querySelectorAll('.hero__slide'));
   var track = document.querySelector('.hero__track');
   var previous = document.querySelector('.slider-arrow--prev');

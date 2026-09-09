@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=26">
+  <link rel="stylesheet" href="styles.css?v=27">
 </head>
 <body>
   <header class="header">
@@ -74,7 +74,7 @@
       <div class="hero__toolbar">
         <div class="hero__actions">
           <a class="button button--primary" href="#products">Продукция</a>
-          <a class="button button--secondary" href="#partner">Стать партнером</a>
+          <a class="button button--secondary js-partner-open" href="#partner-dialog">Стать партнером</a>
         </div>
 
         <div class="slider-controls" aria-label="Управление слайдером">
@@ -268,6 +268,33 @@
     </div>
   </footer>
 
-  <script src="script.js?v=5"></script>
+  <dialog class="partner-dialog" id="partner-dialog" aria-labelledby="partner-dialog-title">
+    <div class="partner-dialog__layout">
+      <div class="partner-dialog__brand" aria-hidden="true">
+        <img src="assets/logo-light.svg" alt="">
+      </div>
+      <div class="partner-dialog__content">
+        <button class="partner-dialog__close" type="button" aria-label="Закрыть"></button>
+        <h2 id="partner-dialog-title">Стать партнером</h2>
+        <form class="partner-form">
+          <label>
+            <span>Имя</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>Компания</span>
+            <input name="company" type="text" autocomplete="organization">
+          </label>
+          <button class="partner-form__submit" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=6"></script>
 </body>
 </html>
