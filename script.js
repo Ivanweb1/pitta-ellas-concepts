@@ -29,6 +29,12 @@
     });
   });
 
+  document.querySelectorAll('.product-card__link[href="#"]').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+    });
+  });
+
   var slides = Array.prototype.slice.call(document.querySelectorAll('.hero__slide'));
   var track = document.querySelector('.hero__track');
   var previous = document.querySelector('.slider-arrow--prev');
