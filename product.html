@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1e8">
+  <title>Пита греческая традиционная | Питта Эллас</title>
+  <meta name="description" content="Пита греческая традиционная Питта Эллас">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=28">
+  <link rel="stylesheet" href="product.css?v=2">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="index.html#top" aria-label="Питта Эллас, на главную">
+        <img src="assets/logo.svg" alt="Питта Эллас">
+      </a>
+
+      <div class="header__right">
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="index.html#top">Главная</a>
+          <a href="#contacts">Контакты</a>
+          <a class="is-current" href="index.html#products">Продукция</a>
+          <a href="index.html#production">Производство</a>
+        </nav>
+        <div class="language" aria-label="Выбор языка">
+          <button class="is-active" type="button" aria-pressed="true">RU</button>
+          <span></span>
+          <button type="button" aria-pressed="false">EN</button>
+        </div>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация">
+        <a href="index.html#top">Главная</a>
+        <a href="#contacts">Контакты</a>
+        <a href="index.html#products">Продукция</a>
+        <a href="index.html#production">Производство</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <section class="product-detail" aria-labelledby="product-title">
+      <div class="product-detail__inner">
+        <h1 id="product-title">Пита греческая традиционная</h1>
+        <div class="product-detail__grid">
+          <div class="product-detail__visual">
+            <img src="assets/pita-product-placeholder.png" alt="Пита греческая традиционная">
+          </div>
+          <dl class="product-specs">
+            <div class="product-specs__row">
+              <dt>Диаметр</dt>
+              <dd>17/18 см/см</dd>
+            </div>
+            <div class="product-specs__row">
+              <dt>Вес</dt>
+              <dd>90-93 гр.</dd>
+            </div>
+            <div class="product-specs__row">
+              <dt>Кол-во шт. в упаковке</dt>
+              <dd>120 шт.</dd>
+            </div>
+            <div class="product-specs__row">
+              <dt>Срок хранения</dt>
+              <dd>пшеничная мука, сахар, соль, вода, ферменты, пропионат кальция ≤ 0,2%</dd>
+            </div>
+            <div class="product-specs__row">
+              <dt>Состав</dt>
+              <dd>При комнатной температуре до двух суток. При температуре 0 ± 5° до 7 дней. При температуре от -18с до 18</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes" aria-labelledby="recipes-title">
+      <div class="recipes__inner">
+        <h2 id="recipes-title">Рецепты</h2>
+        <div class="recipes__grid">
+          <article class="recipe-card">
+            <div class="recipe-card__visual recipe-card__visual--one">
+              <img src="assets/hero-pita-v2.png" alt="">
+              <span class="recipe-card__arrow" aria-hidden="true"></span>
+            </div>
+            <h3>Рецепт приготовления<br>греческого соуса дзадзики</h3>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-card__visual recipe-card__visual--two">
+              <img src="assets/hero-pita-v2.png" alt="">
+              <span class="recipe-card__arrow" aria-hidden="true"></span>
+            </div>
+            <h3>Пита бургер</h3>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-card__visual recipe-card__visual--three">
+              <img src="assets/hero-pita-v2.png" alt="">
+              <span class="recipe-card__arrow" aria-hidden="true"></span>
+            </div>
+            <h3>Пита скепасти</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__inner">
+      <div class="footer__main">
+        <a class="footer__brand" href="#top" aria-label="Питта Эллас, наверх">
+          <img src="assets/logo-light.svg" alt="Питта Эллас">
+        </a>
+        <nav class="footer__nav" aria-label="Навигация в подвале">
+          <a href="index.html#top">Главная</a>
+          <a href="#contacts">Контакты</a>
+          <a href="index.html#products">Продукция</a>
+          <a href="index.html#production">Производство</a>
+        </nav>
+        <div class="footer__address">
+          <p>п. Семигорский, ул. Прудовая 15А.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 ООО «АРТОС». Все права защищены.</p>
+        <a class="footer__top" href="#top" aria-label="Наверх"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=6"></script>
+</body>
+</html>

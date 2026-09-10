@@ -539,6 +539,10 @@ h1 > span { display: block; }
   text-align: center;
 }
 
+.product-card__target {
+  display: block;
+}
+
 .product-card__visual {
   height: clamp(240px, 23vw, 320px);
   margin-bottom: 30px;
