@@ -76,6 +76,34 @@
     });
   }
 
+  var recipeDialog = document.querySelector('.recipe-dialog');
+  var recipeClose = document.querySelector('.recipe-dialog__close');
+
+  document.querySelectorAll('.recipe-card__trigger').forEach(function (trigger) {
+    trigger.addEventListener('click', function (event) {
+      if (!recipeDialog) return;
+      event.preventDefault();
+      recipeDialog.showModal();
+      document.body.classList.add('has-dialog');
+    });
+  });
+
+  if (recipeDialog) {
+    recipeDialog.addEventListener('click', function (event) {
+      if (event.target === recipeDialog) recipeDialog.close();
+    });
+
+    recipeDialog.addEventListener('close', function () {
+      document.body.classList.remove('has-dialog');
+    });
+  }
+
+  if (recipeClose && recipeDialog) {
+    recipeClose.addEventListener('click', function () {
+      recipeDialog.close();
+    });
+  }
+
   var slides = Array.prototype.slice.call(document.querySelectorAll('.hero__slide'));
   var track = document.querySelector('.hero__track');
   var previous = document.querySelector('.slider-arrow--prev');

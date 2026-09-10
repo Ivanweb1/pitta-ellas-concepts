@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=28">
-  <link rel="stylesheet" href="product.css?v=6">
+  <link rel="stylesheet" href="product.css?v=7">
 </head>
 <body id="top">
   <header class="header">
@@ -85,27 +85,43 @@
         <h2 id="recipes-title">Рецепты</h2>
         <div class="recipes__grid">
           <article class="recipe-card">
-            <div class="recipe-card__visual">
-              <img src="assets/recipe-placeholder-v1.png" alt="">
-            </div>
-            <h3>Рецепт греческого соуса дзадзики</h3>
+            <a class="recipe-card__trigger" href="#recipe-dialog" aria-label="Открыть рецепт греческого соуса дзадзики">
+              <div class="recipe-card__visual">
+                <img src="assets/recipe-placeholder-v1.png" alt="">
+              </div>
+              <h3>Рецепт греческого соуса дзадзики</h3>
+            </a>
           </article>
           <article class="recipe-card">
-            <div class="recipe-card__visual">
-              <img src="assets/recipe-placeholder-v1.png" alt="">
-            </div>
-            <h3>Пита бургер</h3>
+            <a class="recipe-card__trigger" href="#recipe-dialog" aria-label="Открыть рецепт пита бургер">
+              <div class="recipe-card__visual">
+                <img src="assets/recipe-placeholder-v1.png" alt="">
+              </div>
+              <h3>Пита бургер</h3>
+            </a>
           </article>
           <article class="recipe-card">
-            <div class="recipe-card__visual">
-              <img src="assets/recipe-placeholder-v1.png" alt="">
-            </div>
-            <h3>Пита скепасти</h3>
+            <a class="recipe-card__trigger" href="#recipe-dialog" aria-label="Открыть рецепт пита скепасти">
+              <div class="recipe-card__visual">
+                <img src="assets/recipe-placeholder-v1.png" alt="">
+              </div>
+              <h3>Пита скепасти</h3>
+            </a>
           </article>
         </div>
       </div>
     </section>
   </main>
+
+  <dialog class="recipe-dialog" id="recipe-dialog" aria-label="Видео рецепта">
+    <div class="recipe-dialog__media">
+      <img src="assets/recipe-placeholder-v1.png" alt="">
+      <button class="recipe-dialog__play" type="button" aria-label="Воспроизвести видео">
+        <span aria-hidden="true"></span>
+      </button>
+      <button class="recipe-dialog__close" type="button" aria-label="Закрыть"></button>
+    </div>
+  </dialog>
 
   <footer class="footer" id="contacts">
     <div class="footer__inner">
@@ -130,6 +146,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
