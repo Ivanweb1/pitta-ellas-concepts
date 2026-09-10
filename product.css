@@ -116,7 +116,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(28px, 4vw, 54px);
-  margin-top: 62px;
+  margin-top: 42px;
 }
 
 .recipe-card {
@@ -219,7 +219,7 @@
   .recipes__grid {
     grid-template-columns: 1fr;
     gap: 52px;
-    margin-top: 44px;
+    margin-top: 34px;
   }
 
 }
