@@ -9,7 +9,7 @@
 
 .product-detail__inner,
 .recipes__inner {
-  width: min(calc(100% - 72px), 1320px);
+  width: min(calc(100% - 72px), 1540px);
   margin-inline: auto;
 }
 

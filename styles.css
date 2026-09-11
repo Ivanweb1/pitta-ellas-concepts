@@ -100,7 +100,7 @@ button { color: inherit; font: inherit; }
 
 .header__inner {
   position: relative;
-  width: min(calc(100% - 72px), 1460px);
+  width: min(calc(100% - 72px), 1540px);
   height: 100%;
   margin-inline: auto;
   display: flex;
@@ -193,9 +193,13 @@ button { color: inherit; font: inherit; }
 .mobile-menu { display: none; }
 
 .slider-controls {
+  position: absolute;
+  top: 50%;
+  right: 0;
   display: flex;
   flex: 0 0 auto;
   gap: 10px;
+  transform: translateY(-50%);
 }
 
 .slider-arrow {
@@ -231,7 +235,8 @@ button { color: inherit; font: inherit; }
 }
 
 .hero__content {
-  width: min(calc(100% - 72px), 1460px);
+  position: relative;
+  width: min(calc(100% - 72px), 1540px);
   min-height: max(650px, calc(100svh - 112px));
   margin-inline: auto;
   padding: 56px 0 70px;
@@ -329,13 +334,13 @@ h1 > span { display: block; }
 }
 
 .hero__toolbar {
-  position: relative;
+  position: static;
   z-index: 15;
   width: 100%;
   margin-top: 34px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 28px;
 }
 
@@ -375,7 +380,7 @@ h1 > span { display: block; }
 }
 
 .benefits__inner {
-  width: min(calc(100% - 72px), 1320px);
+  width: min(calc(100% - 72px), 1540px);
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -443,7 +448,7 @@ h1 > span { display: block; }
 }
 
 .about__inner {
-  width: min(calc(100% - 72px), 1320px);
+  width: min(calc(100% - 72px), 1540px);
   margin-inline: auto;
   display: grid;
   grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
@@ -502,7 +507,7 @@ h1 > span { display: block; }
 }
 
 .products__inner {
-  width: min(calc(100% - 72px), 1320px);
+  width: min(calc(100% - 72px), 1540px);
   margin-inline: auto;
 }
 
@@ -639,7 +644,7 @@ h1 > span { display: block; }
 }
 
 .partners__inner {
-  width: min(calc(100% - 72px), 1320px);
+  width: min(calc(100% - 72px), 1540px);
   margin-inline: auto;
 }
 
@@ -737,7 +742,7 @@ h1 > span { display: block; }
 }
 
 .footer__inner {
-  width: min(calc(100% - 72px), 1380px);
+  width: min(calc(100% - 72px), 1540px);
   margin-inline: auto;
 }
 
@@ -1101,6 +1106,17 @@ body.has-dialog {
     width: calc(100% - 40px);
     min-height: max(680px, calc(100svh - 88px));
     padding: 70px 0 90px;
+  }
+
+  .hero__toolbar {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .slider-controls {
+    position: static;
+    align-self: flex-end;
+    transform: none;
   }
   h1 { max-width: 620px; }
   .slider-arrow { width: 46px; height: 46px; }
