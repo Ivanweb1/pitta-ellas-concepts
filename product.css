@@ -123,11 +123,15 @@
 .packing-option {
   display: grid;
   align-content: center;
-  justify-items: center;
+  justify-items: start;
   gap: 4px;
   min-width: 0;
   padding: 0 12px;
-  text-align: center;
+  text-align: left;
+}
+
+.packing-option:first-child {
+  padding-left: 0;
 }
 
 .packing-option + .packing-option {
